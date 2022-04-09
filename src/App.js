@@ -1,12 +1,18 @@
 import React from 'react';
-//import logo from './logo.svg';
+import { Chatbot } from 'react-chatbot-kit';
+import 'react-chatbot-kit/build/main.css'
+
+import ActionProvider from "./ActionProvider";
+import MessageParser from "./MessageParser";
+import config from './config'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello, World! New Bot Coming Soon! >:)
+       <Chatbot config={config} messageParser={MessageParser} actionProvider={ActionProvider} />
       </header>
     </div>
   );
