@@ -6,7 +6,14 @@ class MessageParser {
     }
   
     parse(message) {
-      console.log(message)
+     
+      if (message.includes('hi'))
+      {
+        console.log("Message received")
+      }    
+      else {
+        console.log("Sorry. I do not understand.")
+      }
     }
   }
   
